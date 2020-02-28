@@ -1,6 +1,4 @@
 node_modules/
-dist/
 .vscode/
 .idea/
-static/
 db/
