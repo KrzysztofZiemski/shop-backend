@@ -6,10 +6,6 @@ const bodyParser = require('body-parser');
 const jsonParser = bodyParser.json();
 require('dotenv').config();
 
-const corsOptions = {
-    origin: 'http://localhost:3000'
-}
-
 class App {
     constructor() {
         this.httpApp = express();

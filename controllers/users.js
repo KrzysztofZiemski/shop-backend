@@ -34,12 +34,11 @@ class Users {
 
         user.password = await bcrypt.hashSync(user.password, Number(process.env.HASH_ROUND));
         const userValidated = await this.validate.validateUser(user);
-
+        //TODO add for easier tests - to removing
         if (user.login === 'admin') userValidated.permission = "admin";
         return this.db.post({ ...userValidated })
     }
 
-    //do usunięcia?
     async addPermission(login, permission) {
         const responseUser = await this.getUser(login);
         const user = responseUser.docs[0]
