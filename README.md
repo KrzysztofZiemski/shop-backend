@@ -1,7 +1,7 @@
 # SHOP
 
 ## Live
-http://www.krzysztofziemski.com/ The webside loading very slow, because i use free version Heroku hosting
+http://shop.krzysztofziemski.com/ The webside loading very slow, because i use free version Heroku hosting
 
 ## Description
 
